@@ -1,15 +1,12 @@
-
 <div align="center">
 
 # 🩸 HEMUNI
 
 ### Conectando pessoas, instituições e informação para transformar a doação de sangue.
 
-
-
 <br>
 
-[![Sprint](https://img.shields.io/badge/SPRINT-01-970000?style=for-the-badge)](.)
+[![Sprint](https://img.shields.io/badge/SPRINT-01%20%7C%2002-970000?style=for-the-badge)](.)
 [![Status](https://img.shields.io/badge/STATUS-Em%20desenvolvimento-AE0202?style=for-the-badge)](.)
 [![TCC](https://img.shields.io/badge/PROJETO-TCC%20SENAI-2E2E2E?style=for-the-badge)](.)
 [![UX/UI](https://img.shields.io/badge/UX%2FUI-Figma-970000?style=for-the-badge&logo=figma&logoColor=white)](.)
@@ -26,7 +23,7 @@ A proposta busca aproximar diferentes participantes desse processo:
 
 🩸 **Doadores** • 👤 **Não doadores** • 🏥 **Hospitais** • 🧑‍⚕️ **Pacientes** • 🏢 **Hemocentros** • ⚙️ **Administradores**
 
-O sistema está sendo planejado para possuir versões **Web e Mobile**, reunindo funcionalidades como informações sobre doação, hemocentros, agendamentos, histórico, solicitações de sangue, campanhas e controle de estoque.
+O sistema está sendo planejado para possuir uma versão **Web**, reunindo funcionalidades como informações sobre doação, hemocentros, agendamentos, histórico, solicitações de sangue, campanhas e controle de estoque.
 
 ---
 
@@ -38,7 +35,7 @@ O sistema está sendo planejado para possuir versões **Web e Mobile**, reunindo
 
 ---
 
-# 🚀 Sprint 01
+# 🚀 Sprint 01 — Planejamento e Prototipação
 
 A **Sprint 01** representa a etapa inicial de planejamento e estruturação do HEMUNI.
 
@@ -144,8 +141,6 @@ Utilizada em textos, parágrafos, botões e demais elementos da interface.
 | H2 | 34px |
 | H1 | 40px |
 
-
-
 ---
 
 # 📋 02. Documento de Requisitos
@@ -215,27 +210,23 @@ O MER representa a estrutura conceitual inicial do sistema.
 
 ### Relacionamentos
 
-```text
-TIPO_SANGUÍNEO
-       │
-       │ possui
-       ▼
-    DOADOR
-       │
-       │ realiza
-       ▼
-     DOAÇÃO
-       │
-       │ acontece em
-       ▼
-  HEMOCENTRO
-       │
-       │ promove
-       ▼
-   CAMPANHA
-```
-
-
+    TIPO_SANGUÍNEO
+           │
+           │ possui
+           ▼
+        DOADOR
+           │
+           │ realiza
+           ▼
+         DOAÇÃO
+           │
+           │ acontece em
+           ▼
+      HEMOCENTRO
+           │
+           │ promove
+           ▼
+       CAMPANHA
 
 ---
 
@@ -249,8 +240,6 @@ O DER detalha a estrutura das entidades, apresentando:
 - 💾 Tipos de dados;
 - 🔄 Relacionamentos.
 
-
-
 ---
 
 # 🖥️ 04. Wireframes & Mockups
@@ -261,7 +250,7 @@ O objetivo desta etapa é definir:
 
 > **Como o usuário irá visualizar, entender e navegar pelo sistema?**
 
-Os primeiros protótipos foram desenvolvidos no **Figma**, considerando a experiência inicial das versões Web e Mobile.
+Os primeiros protótipos foram desenvolvidos no **Figma**, considerando a experiência da versão Web.
 
 ## 🔐 Tela de Login
 
@@ -276,8 +265,6 @@ A tela de Login foi planejada para permitir o acesso dos usuários cadastrados.
 - Acesso ao cadastro;
 - Recuperação de senha.
 
-
-
 ## 📝 Tela de Cadastro
 
 A tela de Cadastro permite que um novo usuário crie sua conta na plataforma.
@@ -291,7 +278,6 @@ A tela de Cadastro permite que um novo usuário crie sua conta na plataforma.
 - Senha;
 - Tipo sanguíneo;
 - Botão de cadastro.
-
 
 ## 🏠 Dashboard
 
@@ -310,9 +296,61 @@ Dependendo do perfil do usuário, diferentes funcionalidades poderão ser aprese
 🩸 Solicitações  
 📦 Estoque
 
+---
 
+# 🚀 Sprint 02 — Desenvolvimento do Sistema
 
+A **Sprint 02** dá continuidade ao planejamento e à prototipação realizados na primeira etapa. Seu foco é iniciar a implementação do HEMUNI, transformando os requisitos e as interfaces planejadas em funcionalidades para a versão Web.
 
+Nesta etapa, a equipe trabalha na estruturação do Front-End, no desenvolvimento do Back-End e na implementação do banco de dados, buscando integrar as partes necessárias para o funcionamento do sistema.
+
+### 🎯 Objetivo
+
+> Iniciar o desenvolvimento do HEMUNI Web, utilizando os requisitos, a modelagem e os protótipos definidos na Sprint 01 como referência para a implementação das funcionalidades.
+
+---
+
+# 📌 Entregáveis da Sprint 02
+
+| 🧩 Etapa | 📄 Entregável | Status |
+|:---:|:---|:---:|
+| 🖥️ | Estrutura inicial do Front-End | 🚧 Em desenvolvimento |
+| ⚙️ | Estrutura inicial do Back-End | 🚧 Em desenvolvimento |
+| 🗄️ | Implementação do banco de dados | 🚧 Em desenvolvimento |
+| 🔗 | Integração entre as partes do sistema | 📌 Planejado |
+| 🔐 | Implementação dos mecanismos de segurança | 📌 Planejado |
+| 🧪 | Testes das funcionalidades | 📌 Planejado |
+| 📝 | Atualização da documentação técnica | 🚧 Em desenvolvimento |
+
+---
+
+# ⚙️ Atividades da Sprint 02
+
+## 🖥️ Desenvolvimento do Front-End
+
+Implementação das interfaces da versão Web com base nos wireframes e mockups desenvolvidos na Sprint 01, mantendo a identidade visual e buscando oferecer uma navegação clara e intuitiva.
+
+## ⚙️ Desenvolvimento do Back-End
+
+Estruturação da lógica do sistema e implementação dos recursos necessários para processar informações, gerenciar usuários e atender às funcionalidades definidas nos requisitos.
+
+## 🗄️ Implementação do Banco de Dados
+
+Organização das tabelas, atributos, chaves e relacionamentos com base na modelagem elaborada na Sprint 01, preparando a estrutura para armazenar e consultar as informações do sistema.
+
+## 🔗 Integração do Sistema
+
+Integração entre as interfaces, a lógica do sistema e o banco de dados, permitindo a comunicação entre as partes conforme as funcionalidades forem implementadas.
+
+## 🔐 Segurança e Privacidade
+
+Consideração de mecanismos de proteção de dados, controle de acesso e permissões de usuários, levando em conta a importância da privacidade das informações tratadas pelo sistema.
+
+## 🧪 Testes e Correções
+
+Realização de testes das funcionalidades implementadas, identificação de problemas e correção de erros durante o desenvolvimento.
+
+---
 
 # 🛠️ Ferramentas
 
@@ -327,49 +365,41 @@ Dependendo do perfil do usuário, diferentes funcionalidades poderão ser aprese
 
 ---
 
+# 📈 Evolução do Projeto
 
+O HEMUNI será desenvolvido em **3 Sprints**, acompanhando a evolução do projeto desde o planejamento até a implementação e validação da solução.
+
+                            🩸 HEMUNI
+                               │
+                 ┌─────────────┼─────────────┐
+                 ▼             ▼             ▼
+            🔴 SPRINT 01   🟠 SPRINT 02   🔴 SPRINT 03
+              PLANEJAR      DESENVOLVER     FINALIZAR
+                 │             │             │
+                 ▼             ▼             ▼
+            Identidade     Front-End       Testes
+            Requisitos     Back-End        Correções
+            MER / DER      Banco           Segurança
+            Wireframes     Integração      Resultados
 
 ---
 
-# 📈 Evolução do Projeto
-
-O HEMUNI será desenvolvido em **3 Sprints**, acompanhando a evolução do projeto desde o planejamento até a implementação da solução.
-
-```text
-                         🩸 HEMUNI
-                            │
-             ┌──────────────┼──────────────┐
-             ▼              ▼              ▼
-        🔴 SPRINT 01    🟠 SPRINT 02    🔴 SPRINT 03
-          PLANEJAR       DESENVOLVER      FINALIZAR
-             │              │              │
-             ▼              ▼              ▼
-        Identidade       Front-End        Testes
-        Requisitos      Back-End         Correções
-        MER / DER        Banco            Segurança
-        Wireframes       Integração       Resultados
-```
-
-
-
-
-
-
-
 # 🎯 Próximos Passos
 
-Após a conclusão da Sprint 01, o projeto seguirá para a etapa de desenvolvimento.
+Após a etapa inicial de desenvolvimento da Sprint 02, o projeto seguirá para a continuidade da implementação, integração e validação das funcionalidades, conforme o planejamento da equipe.
 
-> **Transformar os modelos e protótipos definidos nesta Sprint em funcionalidades reais.**
+> **Transformar os modelos e protótipos definidos na Sprint 01 em funcionalidades reais e avançar na construção do HEMUNI Web.**
 
-### 🚧 Sprint 02
+### 🚧 Sprint 03
 
-- 💻 Desenvolvimento das interfaces;
-- 🗄️ Implementação do banco de dados;
-- ⚙️ Desenvolvimento do Back-End;
-- 📱 Desenvolvimento Mobile;
-- 🔗 Integração entre as partes do sistema;
-- 🔐 Implementação dos mecanismos de segurança.
+- 🖥️ Finalização das interfaces;
+- ⚙️ Conclusão das funcionalidades do Back-End;
+- 🗄️ Revisão e integração do banco de dados;
+- 🔗 Integração dos componentes do sistema;
+- 🔐 Revisão dos mecanismos de segurança;
+- 🧪 Testes e correções;
+- 📋 Validação das funcionalidades;
+- 📝 Finalização da documentação técnica.
 
 ---
 
@@ -385,11 +415,11 @@ Após a conclusão da Sprint 01, o projeto seguirá para a etapa de desenvolvime
 
 | Integrante | Função |
 |:---:|:---:|
-|  Ana | Scrum Master|
-|  Gabrielly | P.O |
-|  Giovanna | Desenvolvedora |
-|  João Pedro | Desenvolvedor |
-| Júlia | Desenvolvedora|
+| Ana | Scrum Master |
+| Gabrielly | P.O |
+| Giovanna | Desenvolvedora |
+| João Pedro | Desenvolvedor |
+| Júlia | Desenvolvedora |
 
 </div>
 
@@ -417,12 +447,15 @@ O HEMUNI nasce com a proposta de utilizar a tecnologia como uma ferramenta de co
 
 [![GitHub](https://img.shields.io/badge/GitHub-HEMUNI-141414?style=for-the-badge&logo=github)](.)
 [![Sprint 01](https://img.shields.io/badge/Sprint%2001-970000?style=for-the-badge)](.)
+[![Sprint 02](https://img.shields.io/badge/Sprint%2002-AE0202?style=for-the-badge)](.)
 [![TCC SENAI](https://img.shields.io/badge/TCC-SENAI-AE0202?style=for-the-badge)](.)
 
 <br>
 
 <sub>Projeto acadêmico desenvolvido como Trabalho de Conclusão de Curso • 2026</sub>
 
-</div>
+<br>
 
-link protótipo: https://drive.google.com/file/d/10H4seZaWsp8mk5QeaPwFCCczM-OAYFzU/view?usp=drive_link
+**Protótipo no Figma/Drive:** [Acessar protótipo](https://drive.google.com/file/d/10H4seZaWsp8mk5QeaPwFCCczM-OAYFzU/view?usp=drive_link)
+
+</div>
